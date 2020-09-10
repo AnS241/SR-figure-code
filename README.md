@@ -57,7 +57,7 @@ def polar_stere(lon_w, lon_e, lat_s, lat_n, **kwargs):
     
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#figure 1a) - map of Svalbard with settlements 
+figure 1a) - map of Svalbard with settlements 
 
 def Svalbard():
     fig, ax1 = plt.subplots(figsize=(8, 10), dpi=300)  # (12,10), dpi = 300)
@@ -153,7 +153,7 @@ def Svalbard():
 
 Svalbard() 
 
-#figure 1b) - map of geographic location in the Arctic
+figure 1b) - map of geographic location in the Arctic
 
 def Arctic():
     fig, ax1 = plt.subplots(figsize=(12, 12), dpi=300)
@@ -219,7 +219,7 @@ multifig1()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#figure 2a) - barchart monthly number of vessels per category
+figure 2a) - barchart monthly number of vessels per category
 
 def barplots(dir):
     os.chdir(dir)
@@ -285,7 +285,7 @@ def barplots(dir):
 barplots("/Users/ali/Desktop/ships/STcut")
 
 
-#figure 2b) - number of fihing vessels per month
+figure 2b) - number of fihing vessels per month
 
 df = pd.read_csv("fishingvessels.csv", delimiter=',')
 #colourblind friendly - brown & blue (dark-light-dark)
@@ -352,7 +352,7 @@ def multifig2():
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#figure 3 and S1 - S15
+figure 3 and S1 - S15
 
 os.chdir('/Volumes/AS_data/IceData')
 
@@ -534,13 +534,14 @@ def multimaps():
     plt.show()
 
 
-#multimaps()
+multimaps()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#figure 4a) - 4d)
+figure 4a) - 4d)
 
-#delimitations coordinates of the different areas 
+delimitations coordinates of the different areas
+
 arearows = [
     [1, 8.0, 35.0, 81.0, 82.8],
     [2, 8.0, 20.0, 79.8, 81.0],
@@ -556,7 +557,8 @@ arearows = [
     [12, 24.5, 38.5, 74.0, 76.5]
 ]
 
-#first claculate sea ice cover and number per vessels for each area
+first claculate sea ice cover and number per vessels for each area
+
 os.chdir('/Volumes/AS_data/30012020/IceData/alldays')
 
 
@@ -670,9 +672,9 @@ def all_zones_ships():
     # dfc.to_csv(r'/Users/ali/Desktop/zoneallpass2204.csv', index=True)
 
 
-#all_zones_ships()
+all_zones_ships()
 
-#second make the time series
+second make the time series
 
 os.chdir('/Users/ali/Desktop/timeseries')
 
@@ -812,7 +814,7 @@ timeseries()
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#figure 4e)
+figure 4e)
 
 def areas_rec():
     fig, ax = plt.subplots(figsize=(12, 10), dpi=300)
